@@ -61,4 +61,3 @@ nnoremap <Down>  <NOP>
 " Custom mappings
 map :NT :NERDTree
 map :nt :NERDTree
-
