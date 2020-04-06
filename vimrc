@@ -20,6 +20,9 @@ Plugin 'tpope/vim-surround'
 Plugin 'townk/vim-autoclose'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'vim-airline/vim-airline'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-commentary'
+Plugin 'yuttie/comfortable-motion.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -35,7 +38,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-set number
+set relativenumber
 set shiftwidth=4
 set tabstop=4
 syntax enable
@@ -44,3 +47,17 @@ set cindent
 set showmatch
 set cursorline
 packadd! matchit
+
+" Don't use the arrow keys
+inoremap <Left>  <NOP>
+inoremap <Right> <NOP>
+inoremap <Up>    <NOP>
+inoremap <Down>  <NOP>
+nnoremap <Left>  <NOP>
+nnoremap <Right> <NOP>
+nnoremap <Up>    <NOP>
+nnoremap <Down>  <NOP>
+
+" Custom mappings
+map :NT :NERDTree
+map :nt :NERDTree
