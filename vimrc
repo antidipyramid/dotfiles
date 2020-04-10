@@ -1,5 +1,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
+set path+=**
+set wildmenu
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -23,6 +25,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-commentary'
 Plugin 'yuttie/comfortable-motion.vim'
+Plugin 'vim-airline/vim-airline-themes'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -47,6 +50,8 @@ set cindent
 set showmatch
 set cursorline
 packadd! matchit
+set hidden
+set term=screen-256color
 
 " Don't use the arrow keys
 inoremap <Left>  <NOP>
@@ -61,3 +66,6 @@ nnoremap <Down>  <NOP>
 " Custom mappings
 map :NT :NERDTree
 map :nt :NERDTree
+
+" Airline configs
+let g:airline#extensions#tabline#enabled = 1
