@@ -13,6 +13,9 @@
 # is used in the bar {} block below.
 font pango:monospace 8
 
+for_window [class=".*"] border pixel 0
+gaps inner all set 20
+
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -190,7 +193,9 @@ bindsym Mod1+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+		position top
 }
+
 
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
