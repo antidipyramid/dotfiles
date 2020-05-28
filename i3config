@@ -59,7 +59,7 @@ floating_modifier Mod1
 bindsym Mod1+Return exec i3-sensible-terminal
 
 # lock the screen
-bindsym Mod1+Shift+c exec --no-startup-id "i3lock -c 000000"
+bindsym Mod1+Shift+v exec --no-startup-id "i3lock -c 000000"
 # suspend and lock the screen
 bindsym Mod1+Shift+x exec --no-startup-id "i3lock -c 000000 && systemctl suspend"
 # kill focused window

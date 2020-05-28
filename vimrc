@@ -54,14 +54,6 @@ set hidden
 set term=screen-256color
 
 " Don't use the arrow keys
-inoremap <Left>  <NOP>
-inoremap <Right> <NOP>
-inoremap <Up>    <NOP>
-inoremap <Down>  <NOP>
-nnoremap <Left>  <NOP>
-nnoremap <Right> <NOP>
-nnoremap <Up>    <NOP>
-nnoremap <Down>  <NOP>
 
 " Custom mappings
 map :NT :NERDTree
