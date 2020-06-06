@@ -65,6 +65,9 @@ bindsym Mod1+Shift+x exec --no-startup-id "i3lock -c 000000 && systemctl suspend
 # kill focused window
 bindsym Mod1+Shift+q kill
 
+# start flux
+exec --no-startup-id "xflux -z 33162"
+
 # start dmenu (a program launcher)
 bindsym Mod1+d exec --no-startup-id "rofi -show drun" 
 # There also is the (new) i3-dmenu-desktop which only displays applications
