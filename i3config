@@ -56,7 +56,7 @@ set $right semicolon
 floating_modifier Mod1
 
 # start a terminal
-bindsym Mod1+Return exec i3-sensible-terminal
+bindsym Mod1+Return exec alacritty 
 
 # lock the screen
 bindsym Mod1+Shift+v exec --no-startup-id "i3lock -c 000000"
