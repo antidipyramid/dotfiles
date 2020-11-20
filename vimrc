@@ -26,6 +26,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-commentary'
 Plugin 'yuttie/comfortable-motion.vim'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'mattn/emmet-vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -61,3 +62,7 @@ map :nt :NERDTree
 
 " Airline configs
 let g:airline#extensions#tabline#enabled = 1
+
+" Emmet configs
+let g:user_emmet_mode='n'
+let g:user_emmet_leader_key=','
