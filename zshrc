@@ -98,3 +98,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias kpxc=keepassxc-cli
+alias vim=nvim
+
+# fzf options
+export FZF_DEFAULT_COMMAND='rg --files' # don't search files in .gitignore

@@ -12,7 +12,7 @@
   # available, otherwise `xterm-256color` is used.
   #TERM: alacritty
 
-#window:
+window:
   # Window dimensions (changes require restart)
   #
   # Specified in number of columns/lines, not pixels.
@@ -33,12 +33,12 @@
   #
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
-  #padding:
-  #  x: 0
-  #  y: 0
+  padding:
+   x: 25
+   y: 25
 
   # Spread additional padding evenly around the terminal content.
-  #dynamic_padding: false
+  dynamic_padding: false
 
   # Window decorations
   #
@@ -97,10 +97,10 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Hack
+    family: Source Code Pro
 
     # The `style` can be specified to pick a specific face.
-    style: Regular
+    style: Semibold
 
   # Bold font face
   bold:
@@ -108,10 +108,10 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Hack
+    family: Source Code Pro
 
     # The `style` can be specified to pick a specific face.
-    style: Bold
+  style: Bold
 
   # Italic font face
   #italic:
@@ -136,13 +136,13 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 8.5 
+  size: 9
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
-    x: 0 
-    y: 0
+    x: 0
+    y: -1 
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
@@ -170,54 +170,70 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
+
+
+# Colors (Oxide)
+# colors:
+#   # Default colors
+#   primary:
+#     background: '#263238'
+#     foreground: '#c0c5ce'
+#     bright_foreground: '#f3f4f5'
+
+#   cursor:
+#     text: '#212121'
+#     cursor: '#c0c5ce'
+
+#   # Normal colors
+#   normal:
+#     black:   '#212121'
+#     red:     '#e57373'
+#     green:   '#a6bc69'
+#     yellow:  '#fac863'
+#     blue:    '#6699cc'
+#     magenta: '#c594c5'
+#     cyan:    '#5fb3b3'
+#     white:   '#c0c5ce'
+
+#   # Bright colors
+#   bright:
+#     black:   '#5c5c5c'
+#     red:     '#e57373'
+#     green:   '#a6bc69'
+#     yellow:  '#fac863'
+#     blue:    '#6699cc'
+#     magenta: '#c594c5'
+#     cyan:    '#5fb3b3'
+#     white:   '#f3f4f5'
+
+# Colors (Ayu Dark)
 colors:
   # Default colors
   primary:
-    background: '0x2c2c2c'
-    foreground: '0xd6d6d6'
-
-    dim_foreground:    '0xdbdbdb'
-    bright_foreground: '0xd9d9d9'
-    dim_background:    '0x202020' # not sure
-    bright_background: '0x3a3a3a' # not sure
-
-  # Cursor colors
-  cursor:
-    text:   '0x2c2c2c'
-    cursor: '0xd9d9d9'
+    background: '#0f1419'
+    foreground: '#B3B1AD'
 
   # Normal colors
   normal:
-    black:   '0x1c1c1c'
-    red:     '0xbc5653'
-    green:   '0x909d63'
-    yellow:  '0xebc17a'
-    blue:    '0x7eaac7'
-    magenta: '0xaa6292'
-    cyan:    '0x86d3ce'
-    white:   '0xcacaca'
+    black: '#01060E'
+    red: '#EA6C73'
+    green: '#91B362'
+    yellow: '#F9AF4F'
+    blue: '#53BDFA'
+    magenta: '#FAE994'
+    cyan: '#90E1C6'
+    white: '#C7C7C7'
 
   # Bright colors
   bright:
-    black:   '0x636363'
-    red:     '0xbc5653'
-    green:   '0x909d63'
-    yellow:  '0xebc17a'
-    blue:    '0x7eaac7'
-    magenta: '0xaa6292'
-    cyan:    '0x86d3ce'
-    white:   '0xf7f7f7'
-
-  # Dim colors
-  dim:
-    black:   '0x232323'
-    red:     '0x74423f'
-    green:   '0x5e6547'
-    yellow:  '0x8b7653'
-    blue:    '0x556b79'
-    magenta: '0x6e4962'
-    cyan:    '0x5c8482'
-    white:   '0x828282'
+    black: '#686868'
+    red: '#F07178'
+    green: '#C2D94C'
+    yellow: '#FFB454'
+    blue: '#59C2FF'
+    magenta: '#FFEE99'
+    cyan: '#95E6CB'
+    white: '#FFFFFF'
 
 # Colors (Tomorrow Night Bright)
 #colors:
@@ -327,7 +343,7 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 1 
+background_opacity: .9 
 
 #selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
